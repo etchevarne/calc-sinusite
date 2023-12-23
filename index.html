@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Chance de Sinusite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Sinusite Bacteriana Aguda</h1>
+        <div class="select-guideline" >
+            <h2>Escolha a diretriz: </h2>
+            <div class="guideline-buttons">
+                <button id="EPOS" class="guideline-button">
+                     <img src="images\EPOS.png" alt="EPOS 2012">
+                </button>
+                <button id="AAO-HNSF" class="guideline-button">
+                    <img src="images\AAO-HNSF.png" alt="AAO-HNSF">
+                </button>
+                 
+            </div>
+            <p>Após a escolha da diretriz, clique nos sintomas e aperte calcular.</p>
+            <div id="guideline-info"></div>
+        </div>
+
+        <div class="symptoms" id="symptoms">
+            <!-- Os sintomas serão gerados dinamicamente com base na diretriz escolhida -->
+        </div>
+
+        <div id="calculate-container">
+            <button id="calculate">Calcular</button>
+          </div>
+
+        <div id="result" class="result">
+            <!-- O resultado será exibido aqui -->
+        </div>
+
+        <div id="alert">
+            <p>Por favor, consulte um médico otorrinolaringologista para um diagnóstico e tratamento adequado. Você pode marcar uma consulta <a href="https://www.doctoralia.com.br/dario-hart-signorini/otorrino/rio-de-janeiro">aqui</a>.</p>
+          </div>
+
+
+        <div id="tableContainer" class="table"> </div>  
+          
+          
+  
+    </div>
+    <!-- Seu link de script para o seu arquivo JavaScript personalizado -->
+    <script src="sinusite.js"></script>
+    
+
+
+    
+
+    
+    <footer class="footer">
+        <button id="resetButton">Resetar</button>
+        <button id="tableInsert">Enviar para Planilha</button>
+        <button id="clearTableButton">Limpar tabela</button>
+
+        <p>© 2023 - Calculadora de Chance de Sinusite</p>
+      </footer>
+    
+        
+</body>
+
+</html>
